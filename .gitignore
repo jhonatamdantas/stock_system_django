@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+my.cnf
+.env
+*.log
+venv
+.venv
+venv/*

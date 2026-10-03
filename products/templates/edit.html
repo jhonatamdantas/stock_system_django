@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Edição{% endblock title %}
+
+{% block content %}
+<h1>Edite os itens abaixo</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Estoque</th>
+            <th>Preço de Custo</th>
+            <th>Preço de Venda</th>
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    {% for p in products %}
+        <tbody>
+            <tr>
+                <td>{{p.name}}</td>
+                <td>{{p.stock}}</td>
+                <td>{{p.cost_price}}</td>
+                <td>{{p.selling_price}}</td>
+                <td>{{p.type_product}}</td>
+                <td>
+                    <form action="{% url "delete" p.pk %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit">Deletar</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="{% url "update" p.pk %}">
+                        {% csrf_token %}
+                        <button type="submit">Atualizar</button>
+                    </form>
+                </td>
+            </tr>
+            {% empty %}
+                <p>Não existe itens cadastrados</p>
+        </tbody>
+    {% endfor %}
+</table>
+<button class="btn-home" onclick="window.location.href='{% url 'home' %}'">Voltar</button>
+{% endblock %}

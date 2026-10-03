@@ -1,0 +1,140 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-form{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control-input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-control{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-submit{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-canceled{
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-canceled a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-home{
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-select-input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h1, h3{
+    text-align: center;
+    margin-top: 20px;
+    color: #131313;
+}
+p{
+    color: #131313;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-base{
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    background-color: #006faa;
+}
+
+.nav-home{
+    color: #fbfbfb; 
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none; 
+}
+
+.nav-home:hover{
+    color: #797979; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+table, th, td{
+    border: 1px solid #131313;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.initial-control{
+    color: #131313;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.initial-control:hover{
+    color: #797979;
+}

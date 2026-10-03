@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Atualizar{% endblock title %}
+
+{% block content %}
+<h1>Atualize o item abaixo</h1>
+<form method="post" class='form-control'>
+    {% csrf_token %}
+    <div class='input-control'>
+        <label>{{form.name.label}}</label>
+        {{form.name}}
+        <br>
+        <label>{{form.stock.label}}</label>
+        {{form.stock}}
+        <br>
+        <label>{{form.cost_price.label}}</label>
+        {{form.cost_price}}
+        <br>
+        <label>{{form.selling_price.label}}</label>
+        {{form.selling_price}}
+        <label>{{form.type_product.label}}</label>
+        {{form.type_product}}
+        <button type='submit' class='btn-submit'>Adicionar</button>
+        <button class="btn-canceled">Cancelar</button>
+    </div>
+</form>
+
+
+{% endblock  %}
